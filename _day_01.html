@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 1</title>
+    <style>
+      body {
+        background-color: #444;
+        color: #aaa;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Day 1 of 100 Days of javascript Challenge</h1>
+
+    <script>
+      //       const findLongestWord = (str) => {
+      //         const removeWhitespace = str.trim().split(" ");
+
+      //         removeWhitespace.sort((a, b) => a.length - b.length);
+      //         console.log(removeWhitespace);
+      //         return removeWhitespace.at(-1).length;
+      //       };
+
+      const findLongestWord = (str) => {
+        const removeWhitespace = str.trim().split(" ");
+        removeWhitespace.sort((a, b) => a.length - b.length);
+        return removeWhitespace.at(-1);
+      };
+
+      console.log(
+        findLongestWord(
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nemo aspernatur optio placeat odit eligendi doloribus? "
+        )
+      );
+    </script>
+  </body>
+</html>
