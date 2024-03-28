@@ -18,16 +18,28 @@
       //       const findLongestWord = (str) => {
       //         const removeWhitespace = str.trim().split(" ");
 
-      //         removeWhitespace.sort((a, b) => a.length - b.length);
-      //         console.log(removeWhitespace);
-      //         return removeWhitespace.at(-1).length;
-      //       };
-
       const findLongestWord = (str) => {
         const removeWhitespace = str.trim().split(" ");
+
         removeWhitespace.sort((a, b) => a.length - b.length);
+        console.log(removeWhitespace);
         return removeWhitespace.at(-1);
       };
+   
+//  using sort() method find the longest word in a paragraph 
+
+
+
+
+      //       const findLongestWord = (str) => {
+      //         const removeWhitespace = str.trim().split(" ");
+      //         const withreduceMethod = removeWhitespace.reduce((longest, current) => {
+      //           return current.length > longest.length ? current : longest;
+      //         }, "  ");
+      //         return withreduceMethod;
+      //       };
+
+      // using reduce() find the longest word in the paragraph
 
       console.log(
         findLongestWord(
