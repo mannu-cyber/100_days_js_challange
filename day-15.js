@@ -8,10 +8,21 @@
 //   }
 // };
 
-const calculateSqr = (arr) => {
-  return arr.reduce((accu, actual) => accu + actual * actual, 0);
-};
+// const calculateSqr = (arr) => {
+//   // return arr.reduce((accu, actual) => accu + actual * actual, 0);
+//   let sum =0
 
-console.log(calculateSqr([1, 3, 4]));
+//   for (let curval of arr) {
+//     sum =sum+(curval*curval)
+//   }
+// return sum
+// };
 
-//  26
+// console.log(calculateSqr([1, 3, 4]));
+
+// //  26
+
+
+
+
+
